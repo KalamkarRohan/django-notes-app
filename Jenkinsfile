@@ -7,6 +7,7 @@ pipeline{
             steps{
                 sh "whoami"
             clone("https://github.com/LondheShubham153/django-notes-app.git","main")
+                sh ' mkdir -p toto '
             }
         }
         stage("Code Build"){
